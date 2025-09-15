@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>M.Arshad</title>
+  
+  <style>
+  header {
+  background-color: skyblue; /* WhatsApp dark background */
+  color: #000;           /* WhatsApp green text */
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 32px;
+  font-style: oblique;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #25D366;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+  body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: black;
+  text-align: center;
+  padding: 40px;
+  /* Crismatic/prismatic background */
+  background: linear-gradient(120deg, #25D366 0%, #f0f8ff 20%, #229d93 40%, #ff6ec4 60%, #7873f5 80%, #2a3548 100%);
+  background-size: 200% 200%;
+  animation: prismaticMove 8s ease-in-out infinite;
+}
+
+/* Animated gradient effect */
+@keyframes prismaticMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+  header:hover {
+    
+  transition: all 0.4s ease-in-out;
+}
+
+ nav {
+  margin-top: 1vh;
+  background-color: #229d93;  /* dark blue-gray */
+  padding: 1vw 5vh;
+  border-radius: 10px;
+  top: 50% ;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ nav:hover {
+  transform: scale(1.05) ;
+  transition: transform 0.4s ease-in-out;
+  border: #f1c40f 2px solid;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  
+  color: #f1c40f;
+  text-decoration: underline;
+
+}
+.fancy-image {
+  margin-top: 25px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow:
+    0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+
+  .social-icons a:hover {
+  transform: scale(1.3);
+  box-shadow: 0 8px 20px rgba(0, 255, 128, 0.5); 
+}
+
+  .social-sidebar {
+  
+  position: fixed;
+  top: 50%;
+  left: -120px; /* Hide sidebar initially */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: left 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.social-sidebar.show {
+  left: 0px; /* Show sidebar when active */
+}
+
+.social-sidebar a {
+  margin: 10px 0;
+}
+
+.social-sidebar img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-sidebar img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(6, 91, 176, 0.5);
+  border-radius: 50%;
+}
+
+
+    body {
+      background-color: #020e22; 
+      font-family: 'Segoe UI', sans-serif;
+      color: black;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+        
+      color: rgb(251, 249, 249); /* Heading text color */
+      margin-bottom: 30px;
+       font-family: 'Segoe UI', sans-serif;
+    }
+
+    .education-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .education-box {
+      background-color: white; /* Box background for contrast */
+      border-left: 5px solid #0b5394; /* Deep blue accent */
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #000; /* Text inside boxes in black */
+    }
+
+    .education-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .education-box h2 {
+      color: #0b5394; /* Deep blue title for boxes */
+      margin-bottom: 15px;
+    }
+
+    .education-box p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    .education-box {
+  background-color: white;
+  border-left: 5px solid #0b5394;
+  border-radius: 10px;
+  padding: 30px;               /* increased padding */
+  width: 350px;                /* increased width */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #000;
+}
+
+.education-box h2 {
+  color: #265f92;
+  margin-bottom: 20px;         /* added space under heading */
+  font-size: 22px;             /* slightly bigger title */
+}
+
+.education-box p {
+  line-height: 1.8;            /* more spacing between lines */
+  font-size: 17px;             /* slightly larger text */
+}
+
+       .certificates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+body{
+     background-color: #2a3548; 
+}
+
+ h2
+{
+    text-align: center;
+    color: #f0f8ff;
+     font-family: 'Segoe UI', sans-serif;
+}
+.certificate {
+  background-color: #f0f8ff; /* light sky blue */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.certificate:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 40px rgba(0, 128, 255, 0.5);
+}
+
+.certificate p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+.fancy-image:hover {
+  transform: scale(1.2) rotate(3deg);
+  transition: transform 0.7s ease-in-out;
+  box-shadow: 0 0 15px rgb(233, 37, 213),
+              0 0 30px rgb(217, 27, 198),
+              0 0 70px rgb(212, 16, 193);
+  border-radius: 50%;
+  cursor: pointer;
+ 
+}
+.fact-box {
+  background: rgba(255,255,255,0.85);
+  border-left: 5px solid #25D366;
+  border-radius: 10px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  max-width: 400px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.fact-box h2 {
+  color: #229d93;
+  margin-bottom: 12px;
+}
+
+.fact-box ul {
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.fact-box li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+/* New styles for skills section */
+.skills-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.skills-section h2 {
+  color: #229d93;
+  margin-bottom: 25px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.skill-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 25px 10px 15px 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 2px 6px #25D36655);
+}
+
+.skill-card span {
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.skill-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 24px rgba(34,157,147,0.15);
+}
+
+/* .paragraph:hover {
+  box-shadow: #0b5394 0px 0px 20px 5px;
+  border-radius: 15px;
+  transform: scale(1.07);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-sizing: border-box;
+  max-width: 100vw;
+} */
+
+  </style>
+</head>
+<body>
+
+ <header>
+  Hi, I'm Muhammad Arshad! Welcome to My Personal Page
+</header> 
+<nav>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact" id="contact-link" >Contact</a>
+</nav>
+<img src="/assets/my image.jpg" class="fancy-image"><br>
+
+<p class="paragraph" style="text-align: justify; font-size: 16px ;" >Hello! I'm <strong>Muhammad Arshad</strong>, a passionate learner with a growing interest in computer science, cloud computing, web development, and data science. I enjoy building websites, exploring coding challenges, and expanding my skills in modern technologies. This personal webpage is a reflection of my journey — where I share my background, skills, projects, and goals. I'm constantly learning and always excited to take on new challenges. Thank you for visiting!
+</p>
+
+
+
+<div class="social-sidebar">
+  <a href="https://facebook.com/yourusername" target="_blank">
+    <img src="/assets/facebook.jpg" alt="Facebook">
+  </a>
+  <a href="https://twitter.com/yourusername" target="_blank">
+    <img src="/assets/snapchat.jpg" alt="Twitter">
+  </a>
+  <a href="https://instagram.com/yourusername" target="_blank">
+    <img src="/assets/instagram.jpg" alt="Instagram">
+  </a>
+  <a href="https://linkedin.com/in/yourusername" target="_blank">
+    <img src="/assets/gitHub.jpg" alt="LinkedIn">
+  </a>
+</div>
+
+<!-- Replace your current .skills-box section with this modern version -->
+<div class="skills-section" id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="/assets/word.png" alt="Word Icon">
+      <span>Microsoft Word</span>
+    </div>
+    <div class="skill-card">
+      <img src="/assets/excel.png" alt="Excel Icon">
+      <span>Microsoft Excel</span>
+    </div>
+    <div class="skill-card">
+      <img src="/assets/powerpoint.png" alt="PowerPoint Icon">
+      <span>PowerPoint</span>
+    </div>
+    <div class="skill-card">
+      <img src="/assets/marketing.png" alt="Marketing Icon">
+      <span>Digital Marketing</span>
+    </div>
+    <div class="skill-card">
+      <img src="/assets/dataentry.png" alt="Data Entry Icon">
+      <span>Data Entry</span>
+    </div>
+    <div class="skill-card">
+      <img src="/assets/webdev.png" alt="Web Dev Icon">
+      <span>Web Development</span>
+    </div>
+  </div>
+</div>
+
+
+  <h1 id="education">My Education Journey</h1>
+
+  <div class="education-container">
+    <div class="education-box">
+      <h2>Matric</h2>
+      <p>
+        I completed my Matriculation in Science at <strong>Govt. Higher Secondary School KMK, Dera Ismail Khan</strong> in <strong>2020</strong>.
+      </p>
+    </div>
+
+    <div class="education-box">
+      <h2>Intermediate (FSc)</h2>
+      <p>
+       <p>
+  I completed my <strong>FSc in Pre-Medical</strong> from <strong>Al Abbas Science School and College Bilot, Dera Ismail Khan</strong> in <strong>2023</strong>.
+</p>
+
+    </div>
+
+    <div class="education-box">
+      <h2>BS (Computer Science)</h2>
+      <p>
+       "I am currently pursuing a Bachelor's degree in <strong>Computer Science</strong> at <strong> Gomal University,</strong> Dera Ismail Khan."
+      </p>
+    </div>
+  </div>
+
+  <!-- Interesting Fact Box Start -->
+  <div class="fact-box">
+    <h2>Did You Know?</h2>
+    <ul>
+      <li>Computer Science is one of the fastest-growing fields in the world!</li>
+      <li>The first computer bug was an actual moth found in a computer in 1947.</li>
+      <li>Cloud computing lets you access data from anywhere in the world.</li>
+      <li>I love solving coding puzzles and learning new tech every week!</li>
+    </ul>
+  </div>
+  <!-- Interesting Fact Box End -->
+
+  <h2 id="certificates">My Certificates</h2>
+
+<div class="certificates">
+  <div class="certificate">
+    <a href="/assets/intro to AWS.jpg" target="_blank">
+      <img src="/assets/intro to AWS.jpg" alt="AWS Certificate">
+    </a>
+    <p>Coursera Certificate</p>
+  </div>
+
+  
+
+  <div class="certificate">
+    <a href="/assets/cloud fundamentals.jpg" target="_blank">
+      <img src="/assets/cloud fundamentals.jpg" alt="Cloud Certificate">
+    </a>
+    <p>Coursera Certificate</p>
+  </div>
+
+  <div class="certificate">
+    <a href="/assets/cloud basics.jpg" target="_blank">
+      <img src="/assets/cloud basics.jpg" alt="Cloud Basics Certificate">
+    </a>
+    <p>Coursera Certificate</p>
+  </div>
+
+  <div class="certificate">
+    <a href="/assets/IoT Devices.jpg" target="_blank">
+      <img src="/assets/IoT Devices.jpg" alt="Microsoft Certificate">
+    </a>
+    <p>Coursera Certificate</p>
+  </div>
+
+  <div class="certificate">
+    <a href="/assets/git and github.jpg" target="_blank">
+      <img src="/assets/git and github.jpg" alt="Microsoft Certificate">
+    </a>
+    <p>Simlilearn Certificate</p>
+  </div>
+
+  <div class="certificate">
+    <a href="/assets/job interview.jpg" target="_blank">
+      <img src="/assets/job interview.jpg" alt="Microsoft Certificate">
+    </a>
+    <p>HP Life Certificate</p>
+  </div>
+
+  <div class="certificate">
+    <a href="/assets/AI for beginners.jpg" target="_blank">
+      <img src="/assets/AI for beginners.jpg" alt="Microsoft Certificate">
+    </a>
+    <p>HP Life Certificate</p>
+  </div>
+
+  <div class="certificate">
+    <a href="/assets/presenting data.jpg" target="_blank">
+      <img src="/assets/presenting data.jpg" alt="Microsoft Certificate">
+    </a>
+    <p>HP Life Certificate</p>
+  </div>
+</div>
+
+
+<div class="social-sidebar" id="contact">
+  <a href="https://facebook.com/yourusername" target="_blank">
+    <img src="/assets/facebook.jpg" alt="Facebook">
+  </a>
+  <a href="https://twitter.com/yourusername" target="_blank">
+    <img src="/assets/snapchat.jpg" alt="Twitter">
+  </a>
+  <a href="https://instagram.com/yourusername" target="_blank">
+    <img src="/assets/instagram.jpg" alt="Instagram">
+  </a>
+  <a href="https://linkedin.com/in/yourusername" target="_blank">
+    <img src="/assets/gitHub.jpg" alt="LinkedIn">
+  </a>
+</div>
+<script>
+document.getElementById('contact-link').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('contact').classList.add('show');
+  setTimeout(function() {
+    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+  }, 400);
+});
+// Optional: Hide sidebar when clicking outside
+window.addEventListener('click', function(e) {
+  var sidebar = document.getElementById('contact');
+  var link = document.getElementById('contact-link');
+  if (!sidebar.contains(e.target) && e.target !== link) {
+    sidebar.classList.remove('show');
+  }
+});
+
+// Hide social-sidebar on scroll down, show on scroll up
+(function() {
+  var socialSidebar = document.querySelector('.social-sidebar');
+  var prevScroll = window.scrollY;
+  window.addEventListener('scroll', function() {
+    var currScroll = window.scrollY;
+    if (currScroll > prevScroll) {
+      // Scrolling down
+      socialSidebar.style.opacity = '0';
+      socialSidebar.style.pointerEvents = 'none';
+    } else {
+      // Scrolling up
+      socialSidebar.style.opacity = '0';
+      socialSidebar.style.pointerEvents = 'auto';
+    }
+    prevScroll = currScroll;
+  });
+})();
+
+</script>
+</body>
+</html>
